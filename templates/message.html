@@ -1,0 +1,24 @@
+{% include 'header.html' %}
+{% block title %}Message{% endblock %}
+<main>
+    <div class="message">
+        {% if message %}
+        {{ message }}
+        {% else %}
+        Message
+        {% endif %}
+    </div>
+    <div class="file-info">
+        {% if file_path %}
+        File uploaded successfully. Path: {{ file_path }}
+        {% elif error_message %}
+        Error: {{ error_message }}
+        {% else %}
+        No file uploaded.
+        {% endif %}
+    </div>
+    <div class="back-button">
+        <a href="/">Back</a>
+    </div>
+</main>
+{% include 'footer.html' %}

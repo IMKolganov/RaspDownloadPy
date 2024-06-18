@@ -1,0 +1,82 @@
+/* Общие стили для всего документа */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили для заголовка страницы */
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Стили для основной области контента */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Стили для футера */
+footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Стили для формы загрузки */
+form {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Стили для полей ввода и кнопок */
+input[type="file"], input[type="password"], input[type="submit"] {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+/* Дополнительные стили для сообщения и информации о файле */
+.message {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.file-info {
+    font-size: 18px;
+}
+
+.back-button {
+    margin-top: 20px;
+}
