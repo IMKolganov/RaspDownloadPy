@@ -1,20 +1,20 @@
-# Используем базовый образ Python
+# Use the base Python image
 FROM python:3.12-slim
 
-# Устанавливаем рабочую директорию в контейнере
+# Set the working directory inside the container
 WORKDIR /app
 
-# Копируем файл зависимостей в рабочую директорию
+# Copy the dependency file into the working directory
 COPY requirements.txt .
 
-# Устанавливаем зависимости
+# Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Копируем всё содержимое проекта в рабочую директорию
+# Copy all project contents into the working directory
 COPY . .
 
-# Открываем порт 5000 для Flask
+# Expose port 5000 for Flask
 EXPOSE 5000
 
-# Команда для запуска приложения
+# Command to run the application
 CMD ["python", "app.py"]
