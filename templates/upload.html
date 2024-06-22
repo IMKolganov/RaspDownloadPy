@@ -1,5 +1,4 @@
 {% include 'header.html' %}
-{% block title %}Upload new File{% endblock %}
 <form method="post" enctype="multipart/form-data" action="/upload" onsubmit="return validatePassword()">
     <input type="file" name="file" required>
     <input type="password" name="password" placeholder="Enter password" required>

@@ -41,7 +41,19 @@ The project includes basic features such as password authentication, file upload
     ```bash
     pip install Flask
     ```
+    
+## Docker
 
+1. Build Docker image:
+    ```bash
+    docker build -t rasp_download_py .
+    ```
+    
+2. Run Docker container:    
+    ```bash
+    docker run -d -p 5000:5000 rasp_download_py
+    ```
+    
 ## Configuration
 
 1. Set the hashed password:  

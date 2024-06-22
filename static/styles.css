@@ -1,4 +1,4 @@
-/* Общие стили для всего документа */
+/* РћР±С‰РёРµ СЃС‚РёР»Рё РґР»СЏ СЃС‚СЂР°РЅРёС†С‹ */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -12,14 +12,36 @@ body {
     flex-direction: column;
 }
 
-/* Стили для заголовка страницы */
+/* РЎС‚РёР»Рё РґР»СЏ РЅР°РІРёРіР°С†РёРѕРЅРЅРѕРіРѕ РјРµРЅСЋ */
 header {
     background-color: #333;
     padding: 10px;
     text-align: center;
 }
 
-/* Стили для основной области контента */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* РЎС‚РёР»Рё РґР»СЏ С†РµРЅС‚СЂР°Р»СЊРЅРѕРіРѕ СЃРѕРґРµСЂР¶РёРјРѕРіРѕ СЃС‚СЂР°РЅРёС†С‹ */
 main {
     flex: 1;
     display: flex;
@@ -29,7 +51,7 @@ main {
     padding: 20px;
 }
 
-/* Стили для футера */
+/* РЎС‚РёР»Рё РґР»СЏ С„СѓС‚РµСЂР° */
 footer {
     background-color: #333;
     padding: 10px;
@@ -39,7 +61,7 @@ footer {
     width: 100%;
 }
 
-/* Стили для формы загрузки */
+/* РЎС‚РёР»Рё РґР»СЏ С„РѕСЂРјС‹ */
 form {
     background-color: #444;
     padding: 20px;
@@ -49,7 +71,7 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Стили для полей ввода и кнопок */
+/* РЎС‚РёР»Рё РґР»СЏ РїРѕР»РµР№ РІРІРѕРґР° Рё РєРЅРѕРїРєРё */
 input[type="file"], input[type="password"], input[type="submit"] {
     margin: 10px 0;
     padding: 10px;
@@ -63,11 +85,11 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-    input[type="submit"]:hover {
-        background-color: #0056b3;
-    }
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
 
-/* Дополнительные стили для сообщения и информации о файле */
+/* Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ СЃС‚РёР»Рё РґР»СЏ СЃРѕРѕР±С‰РµРЅРёР№ Рё РёРЅС„РѕСЂРјР°С†РёРё Рѕ С„Р°Р№Р»Рµ */
 .message {
     font-size: 24px;
     margin-bottom: 20px;
