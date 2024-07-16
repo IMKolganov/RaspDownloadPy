@@ -16,10 +16,10 @@ def index():
     return render_template('upload.html')
 
 @app.route('/upload', methods=['POST'])
-def upload_file():
     password = request.form.get('password', '')
     if not password:
         return 'Password is required!'
+def upload_file():
     
     input_password_hash = hashlib.md5(password.encode()).hexdigest()
 
